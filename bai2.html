@@ -8,14 +8,33 @@
     <title>bài thưc hành js</title>
 </head>
 <body>
-<h1>hello super code</h1>
-<button type="button" onclick="helloWorld();">click me!
+<h1>bang chuyen doi tien te</h1>
 
-</button>
+<input type="text" id="nhap">
+<select name="" id="select1">
+    <option value="a">vnd</option>
+    <option value="b">usd</option>
+</select>
+<select name="" id="select2">
+    <option value="a">vnd</option>
+    <option value="b">usd</option>
+</select>
+<button onclick="nhapVao()">convert</button>
+
+
 </body>
 <script>
-    function helloWorld(){
-        alert('hello!');
+    function nhapVao() {
+        let giatrivao = document.getElementById('nhap').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        if (select1 == select2) {
+            alert(giatrivao);
+        }
+        if  (select1 == "a" && select2 =="b") {
+            alert(giatrivao/23000);
+
+         }
     }
 </script>
 </html>
